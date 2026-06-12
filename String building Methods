@@ -1,0 +1,49 @@
+class Main {
+    public static void main(String[] args) {
+
+        String str1 = "welcome";
+        String str2 = "to";
+        String str3 = "Java";
+        String str4 = "Programming";
+
+        String n = str1.concat(str2);
+        String s = n.concat(str3);
+        String b = s.concat(str4);
+
+        System.out.println(b);
+
+        System.out.println(str2.length());
+
+        System.out.println(String.join(" ", str3, str4));
+
+        System.out.println(str4.replace('p', 'P'));
+
+        System.out.println(str3.contains("hello"));
+
+        System.out.println(str1.indexOf('o'));
+
+        System.out.println(str3.toUpperCase());
+
+        System.out.println(str1.toLowerCase());
+
+        System.out.println(str4.compareToIgnoreCase("programming"));
+        System.out.println(str1.equalsIgnoreCase("WELCOME"));
+    }
+}
+}
+
+
+//output
+welcometoJavaProgramming
+2
+Java Programming
+Programming
+false
+4
+JAVA
+welcome
+0
+true
+
+
+
