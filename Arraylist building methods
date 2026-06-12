@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc  = new Scanner (System.in);
+        ArrayList<Integer> x = new ArrayList();
+        x.add(20);
+        x.add(30);
+        x.add(40);
+        int n = x.indexOf(20);
+        System.out.println(n);
+        x.remove(1);
+        System.out.println(x);
+        x.clear();
+        ArrayList<Integer> y = new ArrayList();
+        y.add(10);
+        y.add(30);
+        y.add(60);  
+        y.add(20);
+        y.add(90);
+        y.clone();
+        System.out.println(y);
+        y.set(3,65);
+        System.out.println(y);
+        y.ensureCapacity(100);
+        System.out.println(y);
+           
+    }}
+
+//output
+0
+[20, 40]
+[10, 30, 60, 20, 90]
+[10, 30, 60, 65, 90]
+[10, 30, 60, 65, 90]
+
